@@ -34,7 +34,7 @@ public class DetalhesDocumentoController {
             documento.descricao = dadosTabelados.select("strong:contains(Descrição)").next("span").text();
             documento.tipo = dadosTabelados.select("strong:contains(Tipo de documento)").next("span").text();
             documento.valorDocumento = dadosTabelados.select("strong:contains(Valor do documento)").next("span").text();
-            documento.descricao = dadosTabelados.select("strong:contains(Observação do documento)").next("span").text();
+            documento.observacao = dadosTabelados.select("strong:contains(Observação do documento)").next("span").text();
             
             Elements dadosDetalhados = doc.getElementsByClass("dados-detalhados");
             
